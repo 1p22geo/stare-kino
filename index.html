@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Blue Sky Cinema</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+ 
+        <nav class="navbar">
+            <div class="hamburger active">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="setContentToMain()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="setContentToAbc()">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="setContentToRpt()">Repertuar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+           
+           
+
+        </nav>
+
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>Today's movies</h2>
+            <h5>Random movie</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <iframe id="content" class="main" src="something.html"></iframe>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Footer</h2>
+        <p>Bartosz G 2022</p>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

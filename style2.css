@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body */
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  }
+
+li {list-style: none;}
+
+a {text-decoration: none;}
+  
+h1 {margin: 10px;}
+
+.a{
+  min-height:max-content;
+  overflow:visible;
+}
+/* Header/logo Title */
+.header {
+    height: 180px;
+    padding: 60px 0 0 0;
+    text-align: center;
+    color: white;
+    background-image: url("img/main_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 30px;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  /* nav-item */
+  .nav-item a {color: white;}
+  
+
+  .nav-link {
+    transition: 0.4s ease-out;
+  }
+  .nav-link:hover {
+    color: dodgerblue;
+  }
+
+/* big mac */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
+  }
+
+
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex:20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex:80%;
+    background-color: white;
+    padding: 20px;
+    border:none;
+    min-height:1000px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    font-size: 0.8em;
+}
+
+/*REPERTUAR*/
+.filmy {
+  display: flex;
+}
+
+.covers {
+  width: 250px;
+  box-shadow: 10px 10px 20px rgb(95, 94, 94);
+  scale: 100%;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+/* mobile adjustment */
+  @media(max-width:700px){
+    .hamburger{
+      display: block;
+      flex-basis:0px;
+    }
+   .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+   .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+   .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+   .nav-menu{
+      position: sticky;
+      left: -100%;
+      top: 180px;
+      gap: 0;
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      transition: 0.3s;
+    }
+   .nav-item{
+      margin: 10px 0;
+    }
+   .nav-menu.active{
+      display:none;
+    }
+    .row {
+        flex-direction: column;
+    }
+  }
